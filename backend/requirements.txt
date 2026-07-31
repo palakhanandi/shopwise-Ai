@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+
+openai
+
+azure-ai-vision-imageanalysis
+azure-core
+azure-cognitiveservices-speech
