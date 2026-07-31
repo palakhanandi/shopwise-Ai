@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+openai
+azure-ai-vision-imageanalysis
+azure-cognitiveservices-speech
+azure-core
+Pillowgit add .

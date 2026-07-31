@@ -1,0 +1,428 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+}
+
+.app{
+    min-height:100vh;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.tagline{
+    font-size:16px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#555;
+    font-size:18px;
+}
+
+/* Upload */
+
+.upload-box{
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.upload-box h2{
+    margin-bottom:20px;
+}
+
+.upload-box input{
+    margin:20px 0;
+}
+
+.preview{
+    width:250px;
+    margin:20px auto;
+    display:block;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Loader */
+
+.loader{
+    margin-top:25px;
+    text-align:center;
+}
+
+/* Result Card */
+
+.result-card{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.result-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.result-card h2{
+    margin-bottom:25px;
+}
+
+.result-card ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.result-card li{
+    margin-bottom:8px;
+}
+
+/* Score */
+
+.score-card{
+    background:#dbeafe;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.score{
+    font-size:55px;
+    font-weight:bold;
+    color:#2563eb;
+    margin:15px 0;
+}
+
+/* Voice */
+.voice-card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.voice-card select{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+.rate-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.rate-box input{
+    flex:1;
+}
+
+.voice-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.voice-status{
+    margin-top:20px;
+    text-align:center;
+}
+
+.equalizer{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:4px;
+    height:30px;
+    margin-bottom:10px;
+}
+
+.equalizer span{
+    width:6px;
+    background:#2563eb;
+    border-radius:6px;
+    animation:voice 0.8s infinite;
+}
+
+.equalizer span:nth-child(2){
+    animation-delay:.1s;
+}
+
+.equalizer span:nth-child(3){
+    animation-delay:.2s;
+}
+
+.equalizer span:nth-child(4){
+    animation-delay:.3s;
+}
+
+.equalizer span:nth-child(5){
+    animation-delay:.4s;
+}
+
+@keyframes voice{
+
+0%{
+height:8px;
+}
+
+50%{
+height:28px;
+}
+
+100%{
+height:8px;
+}
+
+}
+
+/* Footer */
+
+.footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+.product-header{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.product-image{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    border:2px solid #eee;
+}
+
+.product-info h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.product-info p{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.download-card{
+    background:white;
+    padding:25px;
+    margin-top:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.download-btn{
+    margin-top:15px;
+    padding:14px 25px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.download-btn:hover{
+    background:#1d4ed8;
+}
+.score-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+.score-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+font-weight:700;
+
+color:white;
+
+margin-bottom:20px;
+
+font-size:15px;
+
+}
+
+.score-circle{
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:25px auto;
+
+}
+
+.score-inner{
+
+width:140px;
+
+height:140px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+flex-direction:column;
+
+}
+
+.score-inner h1{
+
+font-size:46px;
+
+margin:0;
+
+}
+
+.score-inner span{
+
+font-size:18px;
+
+color:#6b7280;
+
+}
+
+.progress-title{
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.progress{
+
+height:12px;
+
+background:#e5e7eb;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.progress-fill{
+
+height:100%;
+
+border-radius:20px;
+
+transition:.5s;
+
+}
