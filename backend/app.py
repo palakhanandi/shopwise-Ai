@@ -15,14 +15,18 @@ app = FastAPI(title="ShopWise AI Backend")
 # -----------------------------------
 # CORS
 # -----------------------------------
+origins = [
+    "http://localhost:5173",
+    "https://shopwise-ai-1-zqxb.onrender.com"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # -----------------------------------
 # Upload Folder
 # -----------------------------------
